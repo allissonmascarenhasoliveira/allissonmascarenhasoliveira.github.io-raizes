@@ -1,0 +1,358 @@
+:root{
+    --color-primary: #aba573;
+    --color-secundary: #3c2915;
+    --color-primary-light: #f5eee6;
+
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.logo-arvore{
+    width: 50px;
+}
+
+
+
+
+/* HOME ---------------------
+-------------------------*/
+
+.home{
+    background-size: cover;
+    background-image: url(../images/bg-livro.png);
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+.home .header{
+    padding: 30px 0;
+}
+.home .header .nav  {
+    display: flex;
+    justify-content: center;
+}
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    
+}
+.home .header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.home .header .nav ul .logo{
+    margin: 0 30px;
+    border-radius: 50%;
+    width: 140px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+
+
+/* HOME-BANNER ---------------------
+-------------------------*/
+
+.home .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    width: 1000px;
+    margin-left: -500px;
+    margin-top: -95px;
+    color: white;
+    text-align: center;
+}
+.home .banner h1{
+    letter-spacing: 5px;
+    font-size: 70px;
+    color: white;
+    text-shadow:  0 0 20px rgb(48, 47, 39);
+    margin-bottom: 240px;
+}
+.home .banner span {
+    display: block;
+}
+.home .banner .slogan1 {
+    color: rgb(173, 158, 158);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 14px;
+}
+
+
+.home .banner img {
+    margin-top: 40px;
+}
+.logo-arvore{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+/* HOME-BANNER ---------------------
+-------------------------*/
+.about{
+    
+    background-color: var(--color-primary);
+}
+
+.about .container{
+    display: flex;
+}
+.about .passport {
+    width: 33%;
+    background-size: cover;
+    height: 100%;
+    padding: 350px 20px 20px 20px;
+    background-image: url(../images/fundo-passaporte.png);
+    position: relative;
+    top: -50px;
+    box-shadow: 0 0 20px black;
+}
+
+
+.about .passport .overlay {
+    background: rgba(0, 0, 0, 0.753);
+    text-align: center;
+    padding: 40px 20px;
+    justify-content: flex-end;
+    
+}
+.about .passport h3 {
+    color: var(--color-primary);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.about .experience{
+    width: 66%;
+    color: white;
+    padding-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+.about .experience h2:after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #ece7e1;
+    margin: 20px 0;
+} 
+
+.about .experience .text{
+    display: flex;
+    justify-content: space-between;
+}
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
+
+}
+
+.about .experience .text img{
+    max-height: 250px;
+    align-self: center;
+}
+
+
+
+
+
+/* SERVIÇOS ---------------------
+-------------------------*/
+.services{
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
+}
+
+.services h2 {
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .box h4{
+    color: var(--color-primary);
+    margin-top: 30px;
+}
+
+.services .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+
+
+
+/* APPOINTMENT ---------------------
+-------------------------*/
+.appointment{
+    padding: 100px 0;
+    background-color: var(--color-secundary);
+    background-image: url(../images/mesa.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 250px;
+}
+
+.appointment h2{
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.appointment img{
+    margin: 0 auto;
+    display: block;
+}
+.appointment form{
+    margin-top: 80px;
+}
+
+.appointment .personal-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .personal-data .input-wrapper{
+    width: 100%;
+    margin-right: 30px;
+}
+
+.appointment .personal-data .input-wrapper:last-of-type{
+    margin-right: 0;
+}
+
+.appointment label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--color-primary-light);
+}
+
+.appointment .personal-data input,
+.appointment textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.appointment textarea{
+    height: 100px;
+    width: 85%;
+}
+.appointment button{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* CLIENTES ---------------------
+-------------------------*/
+.client{
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary);
+}
+
+.client h2 {
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.client .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.client .box {
+    background-color: var(--color-primary-light);
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.client .box h4{
+    color: var(--color-primary);
+    margin-top: 30px;
+}
+
+.client .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.client .boxes img{
+    margin: 0 30px;
+    border-radius: 50%;
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
